@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    Vue Shop Project
+    Vue Shop Project test
   </div>
 </template>
 
