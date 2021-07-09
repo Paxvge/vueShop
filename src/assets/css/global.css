@@ -7,5 +7,20 @@ body,
   padding: 0;
 }
 
+ div .el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
 
+.el-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15) !important;
+}
 
+.el-table {
+  margin-top: 15px;
+  font-size: 12px !important;
+}
+
+.el-pagination {
+  margin-top: 15px;
+}

@@ -3,13 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/plugins/element.js'
-import axios from "axios";
+import {request} from '@/network/request'
+
 
 Vue.config.productionTip = false
 
-// 全局挂载axios
-axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/';
-Vue.prototype.$http = axios;
+// 网络请求
+request();
 
 new Vue({
   router,

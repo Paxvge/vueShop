@@ -5,6 +5,7 @@
       <div class="avatar_box">
         <img src="@/assets/img/logo.png" alt="登录logo">
       </div>
+
       <!--登录表单区域-->
       <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="login_form">
         <!--用户名-->
@@ -20,6 +21,7 @@
         <el-button type="primary" @click="login">登录</el-button>
         <el-button type="info" @click="resetLoginForm">重置</el-button>
         </el-form-item>
+
       </el-form>
 
     </div>
@@ -63,7 +65,6 @@
         this.$refs.loginFormRef.validate(valid => {
           if (!valid) return;
           const result = this.$http.post('login', this.loginForm).then(({data: res}) => {
-            console.log(res);
             // 判断status为200则登录成功
             if (res.meta.status !== 200) return this.$message.error('登录失败');
             else this.$message.success('登录成功');
