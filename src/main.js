@@ -4,12 +4,14 @@ import router from './router'
 import store from './store'
 import '@/plugins/element.js'
 import {request} from '@/network/request'
-
+import TreeTable from 'vue-table-with-tree-grid'
 
 Vue.config.productionTip = false
 
 // 网络请求
-request();
+request()
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
