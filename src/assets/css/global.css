@@ -5,7 +5,7 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
-  min-width: 1366px;
+  min-width: 958px;
 }
 
  div .el-breadcrumb {
@@ -24,4 +24,9 @@ body,
 
 .el-pagination {
   margin-top: 15px;
+}
+
+.el-cascader-menu {
+  height: 300px;
+  width: 100%;
 }

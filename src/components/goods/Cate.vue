@@ -38,7 +38,7 @@
         </template>
         <!--操作-->
         <template v-slot:opt="scope">
-          <el-button type="primary" icon="el-icon-edit" size="mini">编辑</el-button>
+          <el-button type="primary" icon="el-icon-edit" size="mini" style="margin: 6px 10px">编辑</el-button>
           <el-button type="danger" icon="el-icon-delete" size="mini">删除</el-button>
         </template>
       </tree-table>
@@ -213,11 +213,10 @@
       // 点击按钮，添加新的分类
       addCate() {
         this.$refs.addCateFormRef.validate(valid => {
-          if (!valid) return
+          if (!valid) return this.$message.error('请输入正确信息');
           this.$http.post('categories', this.addCateForm).then(({data: res}) => {
             if (res.meta.status !== 201) return this.$message.error('添加分类失败');
             else {
-              console.log(res.data);
               this.$message.success('添加分类成功');
               this.getCateList();
               this.addCateDialogVisible = false;
@@ -244,4 +243,5 @@
   .el-cascader-menu {
     height: 300px;
   }
+
 </style>
