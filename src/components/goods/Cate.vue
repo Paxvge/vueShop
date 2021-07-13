@@ -51,7 +51,7 @@
           :page-sizes="[3, 5, 10, 15]"
           :page-size="querInfo.pagesize"
           layout="total, sizes, prev, pager, next, jumper"
-          :total="total">
+          :total="total" background>
       </el-pagination>
 
       <!--添加分类的对话框-->

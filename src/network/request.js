@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import axios from "axios";
 
-export function request() {
+export default function request() {
   // 全局挂载axios
   axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/';
   Vue.prototype.$http = axios;

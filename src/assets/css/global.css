@@ -8,7 +8,7 @@ body,
   min-width: 958px;
 }
 
- div .el-breadcrumb {
+div .el-breadcrumb {
   margin-bottom: 15px;
   font-size: 13px;
 }
@@ -29,4 +29,22 @@ body,
 .el-cascader-menu {
   height: 300px;
   width: 100%;
+}
+
+.el-pagination {
+  overflow: auto;
+}
+
+.el-steps {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.el-step__title {
+  font-size: 13px !important;
+}
+
+.ql-editor {
+  min-height: 300px !important;
 }
