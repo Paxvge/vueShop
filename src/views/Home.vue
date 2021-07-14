@@ -4,7 +4,7 @@
     <el-header>
       <div>
         <img src="@/assets/img/shop.svg" alt="商城logo">
-        <span>订单后台管理系统</span>
+        <span>商品后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
     </el-header>
