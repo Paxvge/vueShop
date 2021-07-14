@@ -76,8 +76,6 @@
           myChart.setOption(result);
         }
       })
-
-
     },
     methods: {
 
